@@ -1,0 +1,5 @@
+spring:
+  sso:
+    entry-point: http://localhost:9909
+    include-urls:
+      - '/**'

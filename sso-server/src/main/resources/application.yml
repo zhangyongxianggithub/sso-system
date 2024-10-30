@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: sso-server
+  freemarker:
+    suffix: .html
+    request-context-attribute: request
+  simple-sso:
+    session-expire-time: 30d
+    cookie-expire-time: 30d
+    ticket-expire-time: 1d
+    token-expire-time: 12h
+server:
+  port: 9900
+  servlet:
+    context-path: /sso

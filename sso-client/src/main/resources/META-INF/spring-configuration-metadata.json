@@ -1,0 +1,80 @@
+{
+  "groups": [
+    {
+      "name": "spring.sso",
+      "type": "com.bestzyx.sso.client.config.AuthenticationProperties",
+      "sourceType": "com.bestzyx.sso.client.config.AuthenticationProperties"
+    },
+    {
+      "name": "spring.sso.gateway",
+      "type": "com.bestzyx.sso.client.config.AuthenticationProperties$Gateway",
+      "sourceType": "com.bestzyx.sso.client.config.AuthenticationProperties",
+      "sourceMethod": "getGateway()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.sso.entry-point",
+      "type": "java.lang.String",
+      "description": "SSO login address",
+      "sourceType": "com.bestzyx.sso.client.config.AuthenticationProperties"
+    },
+    {
+      "name": "spring.sso.exclude-paths",
+      "type": "java.util.List<java.lang.String>",
+      "description": "exclude rule",
+      "sourceType": "com.bestzyx.sso.client.config.AuthenticationProperties"
+    },
+    {
+      "name": "spring.sso.gateway.address",
+      "type": "java.lang.String",
+      "description": "specify the gateway address(ip or domain) if access by gateway",
+      "sourceType": "com.bestzyx.sso.client.config.AuthenticationProperties$Gateway"
+    },
+    {
+      "name": "spring.sso.gateway.converter-class",
+      "type": "java.lang.Class<com.bestzyx.sso.client.auth.UrlConverter>",
+      "description": "url converter for gateway",
+      "sourceType": "com.bestzyx.sso.client.config.AuthenticationProperties$Gateway"
+    },
+    {
+      "name": "spring.sso.gateway.enabled",
+      "type": "java.lang.Boolean",
+      "description": "enable gateway",
+      "sourceType": "com.bestzyx.sso.client.config.AuthenticationProperties$Gateway",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.sso.gateway.port",
+      "type": "java.lang.Integer",
+      "description": "the gateway port",
+      "sourceType": "com.bestzyx.sso.client.config.AuthenticationProperties$Gateway",
+      "defaultValue": 80
+    },
+    {
+      "name": "spring.sso.include-paths",
+      "type": "java.util.List<java.lang.String>",
+      "description": "include rule",
+      "sourceType": "com.bestzyx.sso.client.config.AuthenticationProperties"
+    },
+    {
+      "name": "spring.sso.login-path",
+      "type": "java.lang.String",
+      "description": "login path for local service",
+      "sourceType": "com.bestzyx.sso.client.config.AuthenticationProperties"
+    },
+    {
+      "name": "spring.sso.logout-path",
+      "type": "java.lang.String",
+      "description": "logout path for local service",
+      "sourceType": "com.bestzyx.sso.client.config.AuthenticationProperties"
+    },
+    {
+      "name": "spring.sso.ticket-valid-url",
+      "type": "java.lang.String",
+      "description": "a address for valid the ticket to generate token",
+      "sourceType": "com.bestzyx.sso.client.config.AuthenticationProperties"
+    }
+  ],
+  "hints": []
+}

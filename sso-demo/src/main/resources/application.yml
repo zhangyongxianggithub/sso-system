@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: sso-demo
+  sso:
+    entry-point: http://localhost:9900/sso/login
+    ticket_valid-url: http://localhost:9900/sso/tgt
+    gateway:
+      converter-class: com.baidu.acg.iidp.sso.demo.controller.CustomeUrlConverter
+      enabled: false
+server:
+  port: 9901
+
+logging:
+  level:
+    com.baidu.acg.iidp.sso.demo.*: debug
